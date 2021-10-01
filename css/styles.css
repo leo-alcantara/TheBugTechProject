@@ -1,0 +1,72 @@
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active{
+border-left: rgb(138, 138, 138) 3px solid;
+}
+
+.navbar-brand{
+    width: 150px;
+}
+
+.carousel-item{
+    height: 450px;
+}
+
+.carousel-image-1{
+    background: url('../Images/device2.png');
+    background-size: cover;
+}
+
+.carousel-image-2{
+    background: url('../Images/graphic.png');
+    background-size: cover;
+}
+
+.carousel-image-3{
+    background: url('../Images/finger.png');
+    background-size: cover;
+}
+
+#home-heading{
+    position:relative; 
+    min-height: 200px;
+    background: url('../Images/device.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+    margin: auto;
+
+}
+
+#video-play{
+    position:relative; 
+    min-height: 200px;
+    background: url('../Images/device.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: center;
+    color: white;
+}
+
+#video-play a{
+    color: white;
+}
