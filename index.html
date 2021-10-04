@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>The Bug Tech</title>
 
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/apple-touch-icon.png"/>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat/Ubuntu" rel="stylesheet">
 
@@ -66,10 +69,10 @@
         <div class="carousel-item carousel-image-1 active">
             <div class="container">
                 <div class="carousel-caption d-none d-sm-block text-left mb-5">
-                  <h1 class="display-3">A Step</h1> 
+                  <h1 class="display-3">A Step into the future...</h1> 
                   <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                       Non molestiae doloribus vel nam expedita.</p>
-                      <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+                      <!--<a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>-->
                     </div>
             </div>
         </div>   
@@ -77,7 +80,7 @@
         <div class="carousel-item carousel-image-2">
             <div class="container"> 
                 <div class="carousel-caption d-none d-sm-block mb-5">
-                  <h1 class="display-3">Into</h1> 
+                  <h1 class="display-3">...of your company.</h1> 
                   <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                       Non molestiae doloribus vel nam expedita.</p>
                       <a href="#" class="btn btn-primary btn-lg">Learn More</a>
@@ -88,10 +91,10 @@
         <div class="carousel-item carousel-image-3">
             <div class="container">
                 <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                  <h1 class="display-3">The Future</h1> 
-                  <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                      Non molestiae doloribus vel nam expedita. </p>
-                      <a href="#" class="btn btn-success btn-lg">Learn More</a>
+                  <h1 class="display-3">Follow me</h1> 
+                  <p class="lead">Let me take you on a tour to the future of your company. First, here are two pills,  
+                    one red and one blue. You take the blue and everything will stay the same, but if you take the red...</p>
+                      <a href="#" class="btn btn-success btn-lg">Follow Me</a>
                     </div>
             </div>
         </div>   
@@ -218,6 +221,21 @@
     })
 </script>
 
+<script>
+//VIDEO PLAY
+$(function(){
+    //Auto play modal video
+    $(".video").click(function(){
+        var theModal = $(this).data("target"),
+        videoSRC = $(this).attr("data-video"),
+        videoSRCauto = videoSRC + "?modestbranding=18rel=0&control=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + 'iframe').attr('src', videoSRCauto);
+        $(theModal + 'button.close').click(function(){
+            $(theModal + 'iframe').attr('src', videoSCR);
+        });
+    });
+});
+</script>
 
 
 

@@ -32,6 +32,18 @@ border-left: rgb(138, 138, 138) 3px solid;
     background-size: cover;
 }
 
+#home-icons{
+height: 300px;
+}
+
+#home-icons .rows{
+    padding-top: 200px;
+}
+
+#home-icons i:hover{
+    color: rgb(165, 165, 165);
+}
+
 #home-heading{
     position:relative; 
     min-height: 200px;
