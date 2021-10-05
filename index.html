@@ -10,6 +10,10 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat/Ubuntu" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,9 +34,9 @@
 
     <!-- NAV BAR -->
     
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav id="home" class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
 <div class="container">
-<img src="Images/logo-white.png" alt="The Bug Logo" class="navbar-brand">
+<img src="Images/logo_the_bug.png" alt="The Bug Logo" class="navbar-brand">
 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
 </button>
@@ -49,7 +53,7 @@
             <a href="#works" class="nav-link">Works</a>
         </li>
         <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#call-action" class="nav-link">Contact</a>
         </li>
     </ul>
 </div>
@@ -70,10 +74,10 @@
         <div class="carousel-item carousel-image-1 active">
             <div class="container">
                 <div class="carousel-caption d-none d-sm-block text-left mb-5">
-                  <h1 class="display-3">A Step into the future...</h1> 
-                  <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  <h1 class="lead display-3">A Step into the future...</h1> 
+                  <!--<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                       Non molestiae doloribus vel nam expedita.</p>
-                      <!--<a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>-->
+                      <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>-->
                     </div>
             </div>
         </div>   
@@ -81,21 +85,22 @@
         <div class="carousel-item carousel-image-2">
             <div class="container"> 
                 <div class="carousel-caption d-none d-sm-block mb-5">
-                  <h1 class="display-3">...of your company.</h1> 
-                  <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  <h1 class="lead display-3">...of your company.</h1> 
+                  <!--<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                       Non molestiae doloribus vel nam expedita.</p>
-                      <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+                     <a href="#" class="btn btn-primary btn-lg">Learn More</a>--> 
                     </div>
             </div>
         </div>   
 
         <div class="carousel-item carousel-image-3">
             <div class="container">
-                <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                  <h1 class="display-3">Follow me</h1> 
-                  <p class="lead">Let me take you on a tour to the future of your company. First, here are two pills,  
-                    one red and one blue. You take the blue and everything will stay the same, but if you take the red...</p>
-                      <a href="#" class="btn btn-success btn-lg">Follow Me</a>
+                <div class="carousel-caption d-none d-sm-block text-center mb-5">
+                  <!--<h1 class="display-3">Follow me</h1> -->
+                  <h3 class="lead"> <b> Let me take you on a tour to the future of your company. <br> 
+                    "You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe. <br> 
+                    You take the red pill - you stay in Wonderland <br> and I show you how deep the rabbit-hole goes."</b></h3>
+                      <a href="#call-action" class="btn btn-success btn-lg">Follow Me</a>
                     </div>
             </div>
         </div>   
@@ -117,7 +122,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4 text-center">
-                <i class="fas fa-users fa-3x mb-e"></i>                
+                <i class="fas fa-users fa-3x  mb-e"></i>                
                 <h3>Who we are</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, 
                     lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
@@ -140,7 +145,7 @@
 
 <!-- CARDS SECTION-->
 
-<div  class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+<div id="cards" class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
     <div class="row">
     <div class="card d-flex position-relative flex-column">
         <div class='imgContainer'> 
@@ -191,7 +196,7 @@
             <div class="col">
                 <div class="container pt-5">
                     <h1>Want to know more?</h1>
-                    <a href="#" class="btn btn-success btn-lg">Follow Me</a>
+                    <a href="#call-action" class="btn btn-success btn-lg">Follow Me</a>
                 </div>
             </div>
         </div>
@@ -220,7 +225,7 @@
     <h5>System Development</h5>
     <div class="container">
         <div class="row">
-           <div class="col-md-6 align-sel-center">
+           <div class="col-md-6 align-sel-right">
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum ullam soluta 
                    reiciendis ut, incidunt necessitatibus molestias. 
                    Mollitia suscipit quibusdam possimus? Delectus vero et sapiente?</p>
@@ -232,6 +237,75 @@
         </div>
     </div>
 </section>
+
+
+<!-- CALL TO ACTION SECTION -->
+
+
+<section id="call-action" class="text-center mb-4">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? <br> 
+        Please do not hesitate to contact us directly. <br> Our team will come back 
+        to you within a matter of hours to help you.</p>
+    <div class="row">  
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">            
+                <div class="row">                  
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>                   
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>               
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>         
+                <div class="row">                   
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>      
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Stockholm, Sweden</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 46 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p><a href="mailto:contact@thebugtech.com"></a> contact@thebugtech.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 
 <!-- Footer -->
 
