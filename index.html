@@ -32,7 +32,7 @@
 
 <body>
 
-    <!-- NAV BAR -->
+<!-- NAV BAR -->
     
 <nav id="home" class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
 <div class="container">
@@ -44,7 +44,7 @@
 <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-            <a href="#navbarCollapse" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
             <a href="#about" class="nav-link">About</a>
@@ -116,6 +116,7 @@
 </div>
 </section>
 
+
 <!-- ICONS -->
 
 <section id="about" class="py-5">
@@ -142,6 +143,7 @@
         </div>
     </div>
 </section> 
+
 
 <!-- CARDS SECTION-->
 
@@ -187,24 +189,26 @@
 </div>
 
 
-
 <!-- WANT TO KNOW MORE SECTION -->
 
-<section id="home-heading" class="p-5">
+<section id="home-heading" class="p-5"> 
     <div class="dark-overlay">
         <div class="row">
             <div class="col">
                 <div class="container pt-5">
-                    <h1>Want to know more?</h1>
+                    <h1 class="overlay-none">Want to know more?</h1>
                     <a href="#call-action" class="btn btn-success btn-lg">Follow Me</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div>   
 </section>
 
+
 <!-- WORKS SECTION -->
-<h3 id="works">Works</h3>
+
+<section id="works">
+<h1>Works</h1>
   <ul class="nav flex-column nav-pills nav-side">   
     <li class="nav-item">
       <a class="nav-link active" href="#">System Development</a>
@@ -219,20 +223,21 @@
       <a class="nav-link" href="#">Cyber Security</a>
     </li>
   </ul>
+</section>
 
 
 <section  class="py-3">
     <h5>System Development</h5>
     <div class="container">
         <div class="row">
-           <div class="col-md-6 align-sel-right">
+           <div class="col-md-6 align-self-left">
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum ullam soluta 
-                   reiciendis ut, incidunt necessitatibus molestias. 
-                   Mollitia suscipit quibusdam possimus? Delectus vero et sapiente?</p>
-                   <a href="about.html" class="btn btn-outline-danger btn-large">Learn More</a>
+                   reiciendis ut, incidunt necessitatibus molestias. reiciendis ut, incidunt ullam molestias.
+                   Mollitia necessitatibus incidunt molestias elit reiciendis ut.</p>
+                   <a href="about.html" class="btn btn-outline-primary btn-large">Learn More</a>
            </div> 
            <div class="col-md-6">
-               <img src="/Images/what.jpg" alt="IMG">
+               <img class="works-img" src="/Images/what.jpg" alt="IMG">
            </div>
         </div>
     </div>
@@ -242,7 +247,7 @@
 <!-- CALL TO ACTION SECTION -->
 
 
-<section id="call-action" class="text-center mb-4">
+<section id="call-action" class="text-center ">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? <br> 
         Please do not hesitate to contact us directly. <br> Our team will come back 
@@ -267,8 +272,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
+                            <input type="tel" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Telephone Number</label>
                         </div>
                     </div>
                 </div>         
@@ -284,7 +289,8 @@
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a class="btn btn-primary btn-lg btn-block" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <a class="btn btn-danger btn-lg btn-block" onclick="document.getElementById('contact-form').submit();">Reset</a>
             </div>
             <div class="status"></div>
         </div>      
@@ -297,7 +303,6 @@
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
                     <p>+ 46 234 567 89</p>
                 </li>
-
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
                     <p><a href="mailto:contact@thebugtech.com"></a> contact@thebugtech.com</p>
                 </li>

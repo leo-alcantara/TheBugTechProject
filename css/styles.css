@@ -2,23 +2,26 @@ body {
   margin: 0;
 }
 
-p{
-    font-family: 'Roboto', sans-serif;
+p {
+  font-family: "Roboto", sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Roboto-bold', sans-serif;
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto-bold", sans-serif;
 }
 
 /*NAVBAR*/
 
-
 .navbar .nav-link {
   font-size: 14px;
-  text-transform: uppercase;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  text-transform: uppercase;
 }
 
 .navbar .nav-item.active {
@@ -31,21 +34,19 @@ h1,h2,h3,h4,h5,h6{
 
 /* INTRO SECTION*/
 
-
-.carousel-caption{
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.5);
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
-.lead{
-    text-align: center;
-    padding: 20px;
+.lead {
+  padding: 20px;
+  text-align: center;
 }
 
-
-.carousel-inner p{
-    text-shadow: black;
+.carousel-inner p {
+  text-shadow: black;
 }
 
 .carousel-item {
@@ -74,8 +75,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #about .rows {
-  padding-top: 200px;
   padding-bottom: 100px;
+  padding-top: 200px;
 }
 
 #cards {
@@ -92,11 +93,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .container .card {
-  max-width: 300px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   height: 200px;
   margin: 70px 10px;
+  max-width: 300px;
   padding: 20px 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
 
@@ -105,90 +106,111 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .container .card .imgContainer {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  top: -50px;
-  left: 10px;
-  z-index: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  height: 250px;
+  left: 10px;
+  position: relative;
+  top: -40px;
+  width: 250px;
+  z-index: 1;
 }
 
 .container .card .imgContainer img {
-  max-width: 100%;
   border-radius: 4px;
+  max-width: 100%;
 }
 
 .container .card .content {
-  position: relative;
-  margin-top: -140px;
-  padding: 20px 15px;
-  text-align: center;
   color: #111;
-  visibility: hidden;
+  margin-top: -140px;
   opacity: 0;
+  padding: 20px 15px;
   pointer-events: none;
+  position: relative;
+  text-align: center;
   transition: 0.3s ease-in-out;
+  visibility: hidden;
 }
 
 .container .card:hover .content {
-  visibility: visible;
-  opacity: 1;
   margin-top: -40px;
-  transition-delay: 0.3s;
+
+  opacity: 1;
+
+  transition-delay: 0.2s;
+  visibility: visible;
 }
 
 /*WANT TO KNOW MORE*/
 
 #home-heading {
-  position: relative;
-  min-height: 200px;
   background: url("../Images/graphic.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   color: white;
+  min-height: 250px;
+  position: relative;
+  text-align: center;
 }
 
 .dark-overlay {
+  background-color: rgba(0, 0, 0, 1);
+  height: 100%;
+  left: 0;
+  margin: auto;
+  opacity: 0.5;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 1);
-  opacity: 0.5;
-  margin: auto;
 }
+
 /*WORKS SECTION*/
+
+#works h1 {
+  padding-top: 30px;
+  text-align: center;
+}
 
 /*SIDE NAV*/
 
 .nav-side {
   color: white;
   height: 200px;
-  padding-top: 30px;
   float: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 100px;
 }
 
-#call-action{
-    background-color: rgb(100, 100, 100);
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding-left: 150px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    margin: 0;
+.py-3 {
+  padding-left: 20px;
+}
+
+.works-img {
+  width: 250px;
+  padding-bottom: 20px;
+}
+
+/* CALL TO ACTION SECTION*/
+
+#call-action {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  margin-bottom: 0;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
 }
 
 /*FOOTER*/
 
 .footer {
   background-color: rgb(58, 58, 58);
-  text-align: center;
   color: white;
+  text-align: center;
 }
 .social-icon {
   margin: 20px 10px;
